@@ -1,28 +1,24 @@
 /* Comentario */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 body {
     font-family: sans-serif;
-    padding: 80px 20px 0;
-    background-color: bisque;
+    padding: 100px 0 0;
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
-
 header {
     position: fixed;
-    background-color: blue;    
+    background-color: blue;
     top: 0;
     left: 0;
-    height: 80px;
+    height: 100px;
     width: 100%
 }
 
 aside {
     position: fixed;
-    background-color: aquamarine;    
+    background-color: aquamarine;
     top: 80px;
     left: 0;
     bottom: 20px;
@@ -30,13 +26,13 @@ aside {
 }
 
 section {
-    overflow-y: scroll;
-    position: fixed;
-    background-color: bisque;    
-    top: 80px;
-    left: 20%;
-    bottom: 20px;
-    width: 80%
+    background-color: lightsteelblue;
+    padding: 50px;
+    margin: 100px auto 40px auto;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 15px;
+
 }
 
 footer {
@@ -44,7 +40,7 @@ footer {
     left: 0;
     bottom: 0;
     height: 20px;
-    width: 100%;        
+    width: 100%;
     text-align: center;
     background-color: yellow;
     color: red;
@@ -52,7 +48,7 @@ footer {
 
 a {
     text-decoration: none;
-    background-color: green;
+    background-color: #8e1d2c;
     color: white;
 }
 
@@ -69,4 +65,135 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: black;
     color: white
+}
+
+.hero-split {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 46%;
+    display: flex
+        ;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: lightsteelblue;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.texto {
+    max-width: 50%;
+}
+
+
+.texto h1 {
+    color: #7a1d27;
+    font-size: 36px;
+}
+
+.texto p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.texto {
+    max-width: 50%;
+}
+
+
+.texto_h2 {
+    color: #7a1d27;
+    font-size: 36px;
+}
+
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #a52735;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #8e1d2c;
+}
+
+.imagen {
+    position: relative;
+    max-width: 45%;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.titulo span {
+    color: #d14444;
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+    .card_imag_2 img {
+          width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    object-fit: cover;  
+ 
+    }
+
+.card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #a52735;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
 }
